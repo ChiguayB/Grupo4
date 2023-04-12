@@ -2,3 +2,51 @@
     --header: #6496A4;
     --footer: #474E52;
 }
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BCE4EC;
+    padding-bottom: 1rem;
+    clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% calc(100% - 5rem),
+        0 100%
+    );
+    
+    height: 12rem;
+}
+
+#titulo-2 {
+    text-align: center;
+}
+
+#soporte-cont {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.Explicacion {
+    max-width: 45%;
+    flex: 1 0 15rem;
+    text-align: center;
+}
+
+.Imagen-explicacion {
+    max-width: 45%;
+    flex: 1 0 15rem;
+    min-width: 20rem;
+}
+
+#foto-soporte-ti {
+    width: 100%;
+    overflow: hidden;
+    object-fit: contain;
+}
