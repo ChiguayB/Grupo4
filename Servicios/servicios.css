@@ -31,7 +31,7 @@ body {
   text-decoration: none;
 }
 
-.links a:hover {
+nav .links a:hover {
     background-color: #f9f9f9;
     color: #6496A4;
     padding: .4rem;
@@ -57,6 +57,12 @@ nav img {
 }
 
 /* Aquí finalizan los estilos del navbar*/
+
+
+
+
+
+/*El siguiente código corresponde al footer*/
 
 section {
     position: relative;
@@ -179,3 +185,4 @@ section {
   #ig-logo {
     width: 2rem;
   }
+  /*Aquí finaliza el código del footer*/
