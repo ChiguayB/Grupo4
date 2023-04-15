@@ -8,21 +8,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="servicios.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
     
 </head>
 <body class="cuerpo">
  
-    <nav id="nav" class="fixed-top">
-      <div id="container-flex" class="container flex">
-        <img id="quick" src="../img/quickfix2.png" title="icon"/>
-        <div class="links">
-          <a href="../index.html" id="button" class="--bs-emphasis-color">INICIO</a>
-          <a href="../Sobre Nosotros/SobreNosotros.html" id="button"  class="--bs-emphasis-color">SOBRE NOSOTROS</a>
-          <a href="../Servicios/servicios.html" id="button"  class="--bs-emphasis-color">SERVICIOS</a>
-          <a href="../Contacto/contacto.html" id="button"  class="--bs-emphasis-color">CONTACTO</a>
+    <nav id="nav" class="fixed-top menu-desktop">
+      <div class="container flex" id="nav-cont1">
+        <img src="../img/quickfix2.png" title="icon"/>
+        <div class="links" id="myLinks">
+          <a href="../index.html" class="--bs-emphasis-color">INICIO</a>
+          <a href="../Sobre Nosotros/SobreNosotros.html" class="--bs-emphasis-color">SOBRE NOSOTROS</a>
+          <a href="../Servicios/servicios.html" class="--bs-emphasis-color">SERVICIOS</a>
+          <a href="../Contacto/contacto.html" class="--bs-emphasis-color">CONTACTO</a>
+        </div>
+        <div class="hamburger" id="hambur-off">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
       </div>
     </nav>
@@ -31,108 +36,108 @@
 
     <div class="contenedor-general">
           
-        <h1 id="titulo-principal">Servicios</h1>
+      <h1 id="titulo-principal">Servicios</h1>
 
-        <div class="contenedor-servicios">
+      <div class="contenedor-servicios">
 
-           <div class="servicios-mantenimiento">
+         <div class="servicios-mantenimiento">
 
-            <h2 id="titulo-mantenimiento"> <ion-icon name="construct-outline"></ion-icon> Servicio de mantenimiento <ion-icon name="construct-outline"></ion-icon> </h2>
+          <h2 id="titulo-mantenimiento"> <ion-icon name="construct-outline"></ion-icon> Servicio de mantenimiento <ion-icon name="construct-outline"></ion-icon> </h2>
 
-            <p id="texto-mantenimiento">Nuestro servicio de mantenimiento garantizara que sus equipos y sistemas funcione a plena capacidad, minimizando lo maximo posible el riesgo de fallos o interrupciones de estos, algunas de las actividades de mantenimiento que realizamos son:</p><br>
+          <p id="texto-mantenimiento">Nuestro servicio de mantenimiento garantizara que sus equipos y sistemas funcione a plena capacidad, minimizando lo maximo posible el riesgo de fallos o interrupciones de estos, algunas de las actividades de mantenimiento que realizamos son:</p><br>
 
-            <ul id="contenedor-lista-m">
-               <li id="lista-m"><strong>Mantenimiento preventivo</strong> : Trata sobre la diaria revision de los equipos y sistemas activos, para evitar posibles interrupciones o fallas.</li><br>
-               <li id="lista-m"><strong>Mantenimiento correctivo</strong>: También buscaremos solucionar todos aquellos problemas que ya se encuentran presentes en los equipos o sistemas.</li><br>
-               <li id="lista-m"><strong>Mantenimiento predictivo</strong>: Aquí nos centraremos en el analisis de los usos de datos o equipo para predecir cuando y donde puede ocurrir una falla, de esta forma se pueden tomar medidas de prevencion.</li>
-            </ul>
+          <ul id="contenedor-lista-m">
+             <li id="lista-m"><strong>Mantenimiento preventivo</strong> : Trata sobre la diaria revision de los equipos y sistemas activos, para evitar posibles interrupciones o fallas.</li><br>
+             <li id="lista-m"><strong>Mantenimiento correctivo</strong>: También buscaremos solucionar todos aquellos problemas que ya se encuentran presentes en los equipos o sistemas.</li><br>
+             <li id="lista-m"><strong>Mantenimiento predictivo</strong>: Aquí nos centraremos en el analisis de los usos de datos o equipo para predecir cuando y donde puede ocurrir una falla, de esta forma se pueden tomar medidas de prevencion.</li>
+          </ul>
 
-            <br> <p id="texto-mantenimiento">Nuestro equipo no solamente se encargara de solucionar, prevenir o predecir todos aquellos posibles problemas que puedan aparecer, sino que como servicio extra tambien asesoraremos al desarollo y mejoramiento de sus servidores, equipos o sistemas.</p>
-           </div>
+          <br> <p id="texto-mantenimiento">Nuestro equipo no solamente se encargara de solucionar, prevenir o predecir todos aquellos posibles problemas que puedan aparecer, sino que como servicio extra tambien asesoraremos al desarollo y mejoramiento de sus servidores, equipos o sistemas.</p>
+         </div>
 
-           <div class="servicios-seguridad">
+         <div class="servicios-seguridad">
 
-            <h2 id="titulo-seguridad">  <ion-icon id="escudo" name="shield-half-outline"></ion-icon> Servicio de seguridad  <ion-icon id="escudo" name="shield-half-outline"></ion-icon></h2>
+          <h2 id="titulo-seguridad">  <ion-icon id="escudo" name="shield-half-outline"></ion-icon> Servicio de seguridad  <ion-icon id="escudo" name="shield-half-outline"></ion-icon></h2>
 
 
-            <p id="texto-seguridad">Nuestro servicio de seguridad mantendra todos sus dispositivos, sistemas, redes y datos seguros de cualquier amenaza o ataque cibernetico que pueda presentarse. Para lograrlo consideramos ciertos aspectos tales como:</p>
+          <p id="texto-seguridad">Nuestro servicio de seguridad mantendra todos sus dispositivos, sistemas, redes y datos seguros de cualquier amenaza o ataque cibernetico que pueda presentarse. Para lograrlo consideramos ciertos aspectos tales como:</p>
 
-            <ul id="contenedor-lista-s">
-              <br><li id="lista-s"><strong>Identificacion de las amenazas y vulnerabilidades</strong>: Es necesario registrar toda amenaza o vulnerabilidad hacia los sistemas o datos.</li><br>
-              <li id="lista-s"><strong>Evaluacion de los riesgos</strong>: Una vez identificadas aquellas amenazas se debe evaluar los riesgos de cada una y priorizar las medidas de seguridad. </li><br>
-              <li id="lista-s"><strong>Implementar medidas de seguridad</strong>: Existen diversas implementacion de seguirdad, tales como: Firewalls, sistemas de deteccion de intrusiones, encriptado y demas. </li><br>
-              <li id="lista-s"><strong>Constante monitoreo y actualizacion</strong>: Se debe mantener un constante monitoreo de los sistemas de seguridad y actualizarlos en caso de ser necesario para mejorar su efectividad.</li>
-           </ul>
+          <ul id="contenedor-lista-s">
+            <br><li id="lista-s"><strong>Identificacion de las amenazas y vulnerabilidades</strong>: Es necesario registrar toda amenaza o vulnerabilidad hacia los sistemas o datos.</li><br>
+            <li id="lista-s"><strong>Evaluacion de los riesgos</strong>: Una vez identificadas aquellas amenazas se debe evaluar los riesgos de cada una y priorizar las medidas de seguridad. </li><br>
+            <li id="lista-s"><strong>Implementar medidas de seguridad</strong>: Existen diversas implementacion de seguirdad, tales como: Firewalls, sistemas de deteccion de intrusiones, encriptado y demas. </li><br>
+            <li id="lista-s"><strong>Constante monitoreo y actualizacion</strong>: Se debe mantener un constante monitoreo de los sistemas de seguridad y actualizarlos en caso de ser necesario para mejorar su efectividad.</li>
+         </ul>
 
-           </div>
+         </div>
 
-          </div>
+        </div>
 
-          <div class="imagen">
+        <div class="imagen">
 
-            <img id="imagen-ti" src="..\img\sistem-informasi.jpg" alt="soporte ti">
+          <img id="imagen-ti" src="..\img\sistem-informasi.jpg" alt="soporte ti">
 
-          </div>
+        </div>
+  
+        <h2 id="titulo-precios">Precios</h2>
+         <div class="contenedor-precios">
     
-          <h2 id="titulo-precios">Precios</h2>
-           <div class="contenedor-precios">
-      
 
-           <div class="precios">
+         <div class="precios">
 
-            <div class="servicio-basico">
+          <div class="servicio-basico">
 
-            <h3 id="titulo-basico"> <ion-icon name="folder-open-outline"></ion-icon>  Servicio a eleccion <ion-icon name="folder-open-outline"></ion-icon></h3>
+          <h3 id="titulo-basico"> <ion-icon name="folder-open-outline"></ion-icon>  Servicio a eleccion <ion-icon name="folder-open-outline"></ion-icon></h3>
+        
+          <ul id="lista-basico">
+
+              <li id="value-basico"><strong> Servicio de mantenimiento</strong> : Rutinas de administración, gestión y monitoreo de hardware y software para redes informáticas y Data Centers. Rutinas de prevención de problemas de hardware y software para computadoras personales PC Desktop/Laptops, Mac, Linux y demas. </li> <br>
+
+              <li id="value-basico"><strong> Servicio de seguridad</strong> :Multiplataforma (Windows, Linux, UNIX),Funciones anti ransomware, listas blancas con técnicas avanzadas contra malware y sistema de prevención de intrusiones en el host,Cifrado completo de discos.</li>
+
+          </ul>
+
+          <br><a id="boton1" class="btn btn-primary" href="../Contacto/contacto.html">Comprar</a>
+
+
+          </div>
+
+          <div class="servicio-premium">
+
+            <h3 id="titulo-premium"> <ion-icon name="diamond-outline"></ion-icon> Servicio Premium <ion-icon name="diamond-outline"></ion-icon></h3>
+
+            <ul id="lista-premium">
+
+              <li id="value-premium"><strong> Servicio de mantenimiento(PLUS) + Servicio de seguridad</strong> : Este servicio incluye un pack completo de mantenimiento y proteccion, todos sus sistemas estaran en total funcionamiento y seguros contra cualquier amenaza.</li>
+
+          </ul>
+
+          <br><a id="boton1" class="btn btn-primary" href="../Contacto/contacto.html">Comprar</a>
+
+          </div>
+
+          <div class="servicio-plus">
+
+            <h3 id="titulo-plus"> <ion-icon name="build-outline"></ion-icon> Servicio PLUS <ion-icon name="build-outline"></ion-icon></h3>
+
+            <ul id="lista-plus">
+
+              <li id="value-plus"> <strong> Servicio de mantenimiento + Asesoramiento en la mejora de los servicios</strong> : En este servicio ofrecemos todos los beneficios del mantenimiento Ti estandas, con la adicion de un asesoramiento (presencial o virtual) en la mejora de los dispositivos, sistemas y equipos.</li>
+
+            </ul>
+
+            <br><a id="boton1" class="btn btn-primary" href="../Contacto/contacto.html">Comprar</a>
+
+          </div>
           
-            <ul id="lista-basico">
 
-                <li id="value-basico"><strong> Servicio de mantenimiento</strong> : Rutinas de administración, gestión y monitoreo de hardware y software para redes informáticas y Data Centers. Rutinas de prevención de problemas de hardware y software para computadoras personales PC Desktop/Laptops, Mac, Linux y demas. </li> <br>
+         </div>
 
-                <li id="value-basico"><strong> Servicio de seguridad</strong> :Multiplataforma (Windows, Linux, UNIX),Funciones anti ransomware, listas blancas con técnicas avanzadas contra malware y sistema de prevención de intrusiones en el host,Cifrado completo de discos.</li>
+         
+         </div>
 
-            </ul>
+  </div>
 
-            <br><a id="boton1" class="btn btn-primary" href="../Contacto/contacto.html">Comprar</a>
-
-
-            </div>
-
-            <div class="servicio-premium">
-
-              <h3 id="titulo-premium"> <ion-icon name="diamond-outline"></ion-icon> Servicio Premium <ion-icon name="diamond-outline"></ion-icon></h3>
-
-              <ul id="lista-premium">
-
-                <li id="value-premium"><strong> Servicio de mantenimiento(PLUS) + Servicio de seguridad</strong> : Este servicio incluye un pack completo de mantenimiento y proteccion, todos sus sistemas estaran en total funcionamiento y seguros contra cualquier amenaza.</li>
-
-            </ul>
-
-            <br><a id="boton1" class="btn btn-primary" href="../Contacto/contacto.html">Comprar</a>
-
-            </div>
-
-            <div class="servicio-plus">
-
-              <h3 id="titulo-plus"> <ion-icon name="build-outline"></ion-icon> Servicio PLUS <ion-icon name="build-outline"></ion-icon></h3>
-
-              <ul id="lista-plus">
-
-                <li id="value-plus"> <strong> Servicio de mantenimiento + Asesoramiento en la mejora de los servicios</strong> : En este servicio ofrecemos todos los beneficios del mantenimiento Ti estandas, con la adicion de un asesoramiento (presencial o virtual) en la mejora de los dispositivos, sistemas y equipos.</li>
-
-              </ul>
-
-              <br><a id="boton1" class="btn btn-primary" href="../Contacto/contacto.html">Comprar</a>
-
-            </div>
-            
-
-           </div>
-
-           
-           </div>
-
-
-    </div>
 
 
   </main>
