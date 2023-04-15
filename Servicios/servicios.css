@@ -207,6 +207,7 @@ h1 {
      
 .precios{
 
+  margin-bottom: 50px;
   margin-top: 60px;
   display: flex;
   text-align: center;
