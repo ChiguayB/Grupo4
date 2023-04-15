@@ -1,10 +1,7 @@
 body {
-    height: auto;}
+    height: auto;
+  }
 
-    main {
-        height: 500px;
-    }
-    
 
 /* los siguientes estilos corresponden al nav*/
 #nav {
