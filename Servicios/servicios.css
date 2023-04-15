@@ -1,9 +1,6 @@
 body {
     height: auto;}
 
-    main {
-        height: 500px;
-    }
     
 
 /* los siguientes estilos corresponden al nav*/
@@ -63,6 +60,7 @@ nav img {
 
 .menu-desktop {
     transition: .6s;
+    z-index: 100;
 }
 
 
@@ -82,7 +80,13 @@ nav img {
         transition: .6s;
         z-index: 100;
         position: fixed;
-        height: 38rem !important;
+        height: 100% !important;
+    }
+
+    #hambur-active {
+        position: relative;
+        top: 1rem;
+        right: 1rem;
     }
 
     
@@ -90,6 +94,758 @@ nav img {
 
 /* Aquí finalizan los estilos del navbar*/
 
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BCE4EC;
+    padding-bottom: 1rem;
+    clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% calc(100% - 5rem),
+        0 100%
+    );
+    
+    height: 15rem;
+  }
+  
+  .cuerpo{
+  
+    max-height: 150rem;
+  
+  }
+  
+  
+  .contenedor-general{
+  
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #titulo-principal
+  {
+     color: #2263A8;
+     font-size: 60px;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .contenedor-servicios{
+     
+    justify-content: center;
+     margin:auto;
+     display: flex;
+  }
+  
+  .servicios-mantenimiento{
+  
+    overflow:auto;
+    width: 100%;
+    margin: 50px;
+    height: 650px;
+    border: rgb(22, 22, 22) solid 2px;
+    background: #D0E3FF;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+  
+  }
+  
+  .servicios-mantenimiento::-webkit-scrollbar{
+  
+    width: 7px;
+  }
+  
+  .servicios-mantenimiento::-webkit-scrollbar-thumb{
+  
+    background: #609ed1;
+      border-radius: 5px;
+  }
+  
+  
+  
+  #titulo-mantenimiento{
+  
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 3rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #2263A8;
+  
+  }
+  
+  #texto-mantenimiento, #contenedor-lista-m{
+  
+    line-height: 1.6;
+    margin: auto;
+    text-align: justify;
+    width: 80%;
+    font-size: 1.1rem;
+  
+  }
+  
+  .servicios-seguridad
+  {
+    overflow: auto;
+    width: 100%;
+    height: 650px;
+    margin: 50px;
+    border: rgb(22, 22, 22) solid 2px;
+    background: #D0E3FF;
+    box-shadow: -10px 10px 9px  rgba(0, 0, 0, 0.3);
+  }
+  
+  .servicios-seguridad::-webkit-scrollbar{
+  
+    width: 7px;
+  }
+  
+  .servicios-seguridad::-webkit-scrollbar-thumb{
+  
+    background: #609ed1;
+      border-radius: 5px;
+  }
+  
+  
+  #titulo-seguridad{
+  
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #2263A8;
+  
+  }
+  
+  #escudo
+  {
+  
+    font-size: 50px;
+  
+  }
+  
+  
+  #texto-seguridad,#contenedor-lista-s{
+  
+    line-height: 1.6;
+    margin: auto;
+    text-align: justify;
+    width: 80%;
+    font-size: 1.1rem;
+  
+  }
+  
+  
+  #titulo-precios{
+  
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+    color: #2263A8;
+    font-size: 50px;
+  
+  }
+  
+       
+  .precios{
+  
+    margin-top: 60px;
+    margin-bottom: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+  }
+  
+  .servicio-basico{
+  
+    width: 400px;
+    height:600px;
+    background: #FFE4FF;
+    border: black solid 2px;
+    box-shadow: 10px 10px 9px  rgba(0, 0, 0, 0.3);
+    
+  }
+  
+  #titulo-basico{
+  
+    margin-top: 20px;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  
+  }
+  
+  #lista-basico{
+  
+    margin-top: 30px;
+    text-align: left;
+  
+  }
+  
+  #value-basico{
+  
+   font-size: 1.2rem;
+  
+  }
+  
+  .servicio-plus{
+  
+    width: 400px;
+    height: 600px;
+    background: #8e7bd8;
+    border: black solid 2px;
+    box-shadow: 10px 10px 9px  rgba(0, 0, 0, 0.3);
+  
+  }
+  
+  #titulo-plus{
+  
+    margin-top: 20px;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  }
+  
+  #lista-plus{
+  
+    margin-top: 30px;
+    text-align: left;
+  
+  }
+  
+  #value-plus{
+  
+    font-size: 20px;
+    margin-bottom:170px;
+    
+  }
+  
+  .servicio-premium{
+  
+    width: 400px;
+    height: 600px;
+    background: #BC82FD;
+    border: black solid 2px;
+    box-shadow: 10px 10px 9px  rgba(0, 0, 0, 0.3);
+  
+  }
+  
+  #titulo-premium{
+  
+    margin-top: 20px;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  }
+  
+  #lista-premium{
+  
+    text-align: left;
+  
+  }
+  
+  #value-premium{
+  
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 230px;
+  
+  }
+  
+  #boton1
+  {
+    
+    width: 180px;
+  
+  }
+  
+  #boton2
+  {
+    
+    width: 180px;
+    margin-top: 220px;
+    
+  
+  }
+  
+  #boton3
+  {
+  
+    margin-top: 550px;
+    width: 180px;
+  
+  }
+  
+  @media (max-width: 992px) {
+  
+    
+  
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #BCE4EC;
+      padding-bottom: 1rem;
+      clip-path: polygon(
+          0% 0%,
+          100% 0%,
+          100% calc(100% - 5rem),
+          0 100%
+      );
+      
+      height: 15rem;
+    }
+    
+    .cuerpo{
+    
+      max-height: 150rem;
+    
+    }
+    
+    
+    .contenedor-general{
+    
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    #titulo-principal
+    {
+       color: #2263A8;
+       font-size: 60px;
+       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       margin-bottom: 50px;
+    }
+    
+    .contenedor-servicios{
+  
+       justify-content: center;
+       margin:auto;
+       display: block;
+       text-align: center;
+  
+    }
+    
+    .servicios-mantenimiento{
+    
+      margin: auto;
+      margin-bottom: 50px;
+      width: 100%;
+      height: auto;
+      padding-bottom: 15px;
+      border: none;
+      background: #D0E3FF;
+      box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+    
+    }
+    
+    #titulo-mantenimiento{
+    
+      padding-top: 10px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 2rem;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: #2263A8;
+    
+    }
+    
+    #texto-mantenimiento, #contenedor-lista-m{
+    
+      line-height: 1.6;
+      margin: auto;
+      text-align: justify;
+      width: 80%;
+      font-size: 1.1rem;
+    
+    }
+    
+    .servicios-seguridad
+    {
+      margin: auto;
+      width: 100%;
+      height: auto;
+      padding-bottom: 15px;
+      border: none;
+      background: #D0E3FF;
+      box-shadow: -10px 10px 9px  rgba(0, 0, 0, 0.3);
+      margin-bottom: 70px;
+    }
+    
+    #titulo-seguridad{
+    
+      padding-top: 10px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+      align-items: center;
+      font-size: 2rem;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: #2263A8;
+    
+    }
+    
+    #escudo
+    {
+    
+      font-size: 2rem;
+    
+    }
+    
+    #texto-seguridad,#contenedor-lista-s{
+    
+      line-height: 1.6;
+      margin: auto;
+      text-align: justify;
+      width: 80%;
+      font-size: 1.1rem;
+    
+    }
+  
+    #imagen-ti{
+  
+      margin: auto;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+    }
+    
+    
+    #titulo-precios{
+    
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-top: 50px;
+      color: #2263A8;
+      font-size: 50px;
+    
+    }
+  
+    .contenedor-precios{
+  
+      display: block;
+      margin: auto;
+  
+  
+    }
+    
+         
+    .precios{
+    
+      margin: auto;
+      display: block;
+      height: auto;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+  
+    }
+    
+    .servicio-basico{
+    
+      margin: auto;
+      width:  80%;
+      height:500px;
+      padding-bottom: 20px;
+      background: #FFE4FF;
+      border: black solid 2px;
+      margin-bottom: 50px;
+      
+    }
+    
+    #titulo-basico{
+    
+      margin-top: 20px;
+      font-size: 2rem;
+      text-align: center;
+      justify-content: center;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+    }
+    
+    #lista-basico{
+    
+      margin-top: 30px;
+      text-align: left;
+    
+    }
+    
+    #value-basico{
+    
+     font-size: 1.2rem;
+    
+    }
+    
+    .servicio-plus{
+    
+      margin: auto;
+      width:  80%;
+      height: 500px;
+      background: #8e7bd8;
+      border: black solid 2px;
+      box-shadow: 10px 10px 9px  rgba(0, 0, 0, 0.3);
+    
+    }
+    
+    #titulo-plus{
+    
+      margin-top: 20px;
+      font-size: 2rem;
+      text-align: center;
+      justify-content: center;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    }
+    
+    #lista-plus{
+    
+      margin-top: 30px;
+      text-align: left;
+    
+    }
+    
+    #value-plus{
+    
+      font-size: 20px;
+    
+    }
+    
+    .servicio-premium{
+    
+      margin: auto;
+      width:  80%;
+      height: 500px;
+      background: #BC82FD;
+      border: black solid 2px;
+      box-shadow: 10px 10px 9px  rgba(0, 0, 0, 0.3);
+      margin-bottom: 50px;
+    
+    }
+    
+    #titulo-premium{
+    
+      margin-top: 20px;
+      font-size: 2rem;
+      text-align: center;
+      justify-content: center;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    }
+    
+    #lista-premium{
+    
+      text-align: left;
+    
+    }
+    
+    #value-premium{
+    
+      margin-top: 30px;
+      font-size: 20px;
+    
+    }
+    
+    #boton1
+    {
+      
+      width: 180px;
+    
+    }
+    
+    #boton2
+    {
+      
+      width: 180px;
+      margin-top: 100px;
+      
+    
+    }
+    
+    #boton3
+    {
+    
+      margin-top: 160px;
+      width: 180px;
+    
+    }
+  
+  
+  }
+  
+  @media (max-width: 576px) {
+  
+  
+    .contenedor-precios{
+  
+      display: block;
+      margin: auto;
+  
+  
+    }
+    
+         
+    .precios{
+    
+      margin-bottom: 50px;
+      display: block;
+      height: auto;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+  
+    }
+    
+    .servicio-basico{
+    
+      margin: auto;
+      width:  100%;
+      height:auto;
+      padding-bottom: 20px;
+      background: #FFE4FF;
+      border: none;
+      margin-bottom: 50px;
+      
+    }
+    
+    #titulo-basico{
+    
+      margin-top: 20px;
+      font-size: 2rem;
+      text-align: center;
+      justify-content: center;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+    }
+    
+    #lista-basico{
+    
+      margin-top: 30px;
+      text-align: left;
+    
+    }
+    
+    #value-basico{
+    
+     font-size: 1.2rem;
+    
+    }
+    
+    .servicio-plus{
+    
+      margin: auto;
+      width:  100%;
+      height:auto;
+      background: #8e7bd8;
+      border: none;
+      box-shadow: 10px 10px 9px  rgba(0, 0, 0, 0.3);
+    
+    }
+    
+    #titulo-plus{
+    
+      margin-top: 20px;
+      font-size: 2rem;
+      text-align: center;
+      justify-content: center;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    }
+    
+    #lista-plus{
+    
+      margin-top: 30px;
+      text-align: left;
+    
+    }
+    
+    #value-plus{
+    
+      font-size: 20px;
+    
+    }
+    
+    .servicio-premium{
+    
+      margin: auto;
+      width:  100%;
+      height:auto;
+      background: #BC82FD;
+      border: none;
+      box-shadow: 10px 10px 9px  rgba(0, 0, 0, 0.3);
+      margin-bottom: 50px;
+    
+    }
+    
+    #titulo-premium{
+    
+      margin-top: 20px;
+      font-size: 2rem;
+      text-align: center;
+      justify-content: center;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    }
+    
+    #lista-premium{
+    
+      text-align: left;
+    
+    }
+    
+    #value-premium{
+    
+      margin-top: 30px;
+      font-size: 20px;
+    
+    }
+    
+    #boton1
+    {
+      
+      width: 180px;
+    
+    }
+    
+    #boton2
+    {
+      
+      width: 180px;
+      margin-bottom: 180px;
+    
+    }
+    
+    #boton3
+    {
+      
+      margin-top: 160px;
+      width: 180px;
+    
+    }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
 
 
