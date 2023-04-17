@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="SobreNosotros.css">
-    <script src="servicios.js"></script>
+    <script src="../Servicios/servicios.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     
     <!--BOOTSTRAP-->
@@ -18,17 +19,27 @@
 </head>
 <body>
 
-    <nav id="nav" class="fixed-top">
-        <div class="container flex">
-          <img src="../img/quickfix2.png" title="icon"/>
-          <div class="links">
-            <a href="../index.html" class="--bs-emphasis-color">INICIO</a>
-            <a href="../Sobre Nosotros/SobreNosotros.html" class="--bs-emphasis-color">SOBRE NOSOTROS</a>
-            <a href="../Servicios/servicios.html" class="--bs-emphasis-color">SERVICIOS</a>
-            <a href="../Contacto/contacto.html" class="--bs-emphasis-color">CONTACTO</a>
-          </div>
+    <!--Aquí comienza el nav-->
+    <nav id="nav" class="fixed-top menu-desktop">
+      <div class="container flex" id="nav-cont1">
+        <img src="../img/quickfix2.png" title="icon"/>
+        <div class="links" id="myLinks">
+          <a href="../index.html" class="--bs-emphasis-color">INICIO</a>
+          <a href="../Sobre Nosotros/SobreNosotros.html" class="--bs-emphasis-color">SOBRE NOSOTROS</a>
+          <a href="../Servicios/servicios.html" class="--bs-emphasis-color">SERVICIOS</a>
+          <a href="../Contacto/contacto.html" class="--bs-emphasis-color">CONTACTO</a>
         </div>
-      </nav>
+        <div class="hamburger" id="hambur-off">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!--Aquí finaliza el nav-->
+
+
+
     <main>
   <div class="contenedor-general">
     <h1 id="titulo-principal"> SOBRE NOSOTROS </h1>

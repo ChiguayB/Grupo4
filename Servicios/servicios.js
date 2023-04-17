@@ -5,7 +5,7 @@ function myFunction() {
     
     if (x.style.display === "flex") {
       x.style.display = "none";
-      y.className = "menu-desktop"
+      y.className = "fixed-top menu-desktop"
       z.className = "hambur-active"
 
     } else {

@@ -6,7 +6,7 @@
 /* los siguientes estilos corresponden al nav*/
 #nav {
     height: 12rem;
-    position: sticky;
+    position: fixed;
     left: 0;
     width: 100%;
     display: flex;
@@ -52,7 +52,56 @@
     align-items: center;
     justify-content: space-between;
   }
-
+  
+  .hamburger {
+      display: none;
+      cursor: pointer;
+  }
+  
+  .menu-desktop {
+      transition: .6s;
+      z-index: 100;
+  }
+  
+  
+  
+  @media (max-width: 767px) {
+      .hamburger {
+        display: block;
+      }
+  
+      nav .links {
+          display: none;
+          flex-direction: column;
+          gap: 4rem;
+      }
+  
+      .menu-mobile {
+          transition: .6s;
+          z-index: 100;
+          position: fixed;
+          height: 100% !important;
+      }
+  
+      #hambur-active {
+          position: relative;
+          top: 1rem;
+          right: 1rem;
+      }
+  
+      
+  }
+  
+  @media(min-width: 768px) {
+    nav .links {
+      display: flex !important;
+    }
+  
+    .hambur-active {
+      display: none;
+    }
+  }
+  
   /* Aquí finalizan los estilos del navbar*/
 
 

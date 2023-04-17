@@ -92,6 +92,16 @@ nav img {
     
 }
 
+@media(min-width: 768px) {
+  nav .links {
+    display: flex !important;
+  }
+
+  .hambur-active {
+    display: none;
+  }
+}
+
 /* Aquí finalizan los estilos del navbar*/
 
 h1 {
