@@ -10,22 +10,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
 
-  <nav id="nav" class="fixed-top">
-    <div id="container-flex" class="container flex">
-      <img id="quick" src="img/quickfix2.png" title="icon"/>
-      <div class="links">
-        <a  href="index.html" id="button" class="--bs-emphasis-color">INICIO</a>
-        <a href="Sobre Nosotros/SobreNosotros.html"  id="button" class="--bs-emphasis-color">SOBRE NOSOTROS</a>
-        <a href="Servicios/servicios.html"  id="button" class="--bs-emphasis-color">SERVICIOS</a>
-        <a href="Contacto/contacto.html"  id="button" class="--bs-emphasis-color">CONTACTO</a>
+  <nav id="nav" class="fixed-top menu-desktop">
+    <div class="container flex" id="nav-cont1">
+      <img src="../img/quickfix2.png" title="icon"/>
+      <div class="links" id="myLinks">
+        <a href="../index.html" class="--bs-emphasis-color">INICIO</a>
+        <a href="../Sobre Nosotros/SobreNosotros.html" class="--bs-emphasis-color">SOBRE NOSOTROS</a>
+        <a href="../Servicios/servicios.html" class="--bs-emphasis-color">SERVICIOS</a>
+        <a href="../Contacto/contacto.html" class="--bs-emphasis-color">CONTACTO</a>
+      </div>
+      <div class="hamburger" id="hambur-off">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
     </div>
   </nav>
-  
   
     <main>
      
