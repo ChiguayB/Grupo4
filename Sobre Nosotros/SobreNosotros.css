@@ -50,6 +50,141 @@
 
   /* Aquí finalizan los estilos del navbar*/
 
+
+  .contenedor-general{
+  
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #titulo-principal{
+    color: #2263A8;
+    font-size: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  #titulo-2 {
+    text-align: center;
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #2263A8;
+}
+
+
+  #cuadrado-valores{
+    background-color: #BCE4EC;
+    /*border: 3px solid blue;*/
+    margin: 10px;
+    width: 340px;
+    height: 500px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+  }
+
+  .icono{
+    font-size: 60px;
+    padding-top: 15px;
+  }
+
+  .cont-standard{
+    padding-top: 2%;
+    padding-bottom: 7%;
+  }
+
+  .row{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .col-12{
+    padding: 10px;
+  }
+
+  #titulo-valores{
+    color: rgba(24, 23, 23, 0.849);
+    font-size: 25px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    padding-top: 20px;
+  }
+
+  .letra-cuadrados{
+    padding: 5%;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.788);
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .letra-historia{
+    overflow: visible;
+    padding-top: 10%;
+    padding-left: 10%;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.788);
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .cont-pros{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color:rgba(100, 150, 164, 0.91); ;
+
+  }
+
+  #caja-pros{
+    margin: 10px;
+    width: 340px;
+    background-color: #ADDEEC;
+    border: 2px solid #2263A8;
+    height: 200px;
+  }
+
+  .cont-tituloHistoria{
+    padding-top: 10% ;
+  }
+
+  .imagenH{
+    width: 80%;
+  }
+  
+  .poligono{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BCE4EC;
+    padding-bottom: 1rem;
+    clip-path:  polygon(0 42%, 100% 0, 100% 100%, 0% 100%);
+    height: 30rem;
+}
+@media(max-width:1200px){
+  .poligono{
+    overflow: visible;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #BCE4EC;
+      padding-bottom: 1rem;
+      clip-path:  polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+      height:100% ;
+  }
+  #salir{
+    overflow: visible !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
   /*El siguiente código corresponde al footer*/
 
 section {
