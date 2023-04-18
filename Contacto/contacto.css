@@ -76,6 +76,7 @@ nav img {
         z-index: 100;
         position: fixed;
         height: 100% !important;
+        top: 0;
     }
 
     #hambur-active {
@@ -98,6 +99,38 @@ nav img {
 }
 
 /* Aquí finalizan los estilos del navbar*/
+
+#form-cont {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #ADD7E2;
+}
+
+#razon-cont {
+  margin-top: 2rem;
+}
+
+#text-consult {
+  text-align: center;
+}
+
+#razon-consulta {
+  height: 75%;
+  border-radius: 15px;
+  margin-bottom: 7rem;
+}
+
+#enviar {
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#empresa {
+  display: none;
+}
 
   /*El siguiente código corresponde al footer*/
 
