@@ -575,6 +575,12 @@ h1 {
 
 }
 
+#clientes-api {
+    background-color: #2263A8;
+    color: #f9f9f9;
+    padding: 1rem;
+}
+
 /*El siguiente código corresponde al footer*/
 
 section {

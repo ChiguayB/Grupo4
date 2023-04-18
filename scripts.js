@@ -15,3 +15,24 @@ function myFunction() {
     }
 
   }
+
+  //API 
+  const cont = document.querySelector("#clientes-api")
+
+  $.ajax({
+    url: 'https://randomuser.me/api/?results=5',
+    dataType: 'json',
+    success: (data) => {console.log(data);
+      console.log(data.results.length)
+      for (let i = 0; i < data.results.length; i++) {
+        nombre = data.results[i].name.first;
+        apellido = data.results[i].name.last;
+        newCliente = $( "#clientes-api" ).append(`<p> ${nombre} ${apellido} ${Math.random()}</p>`);
+
+        
+    console.log(nombre + (" ") + apellido);
+        
+      }
+      
+    }
+  });
