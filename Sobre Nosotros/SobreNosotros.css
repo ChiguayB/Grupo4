@@ -1,3 +1,4 @@
+
 /* los siguientes estilos corresponden al nav*/
 #nav {
   height: 12rem;
@@ -198,6 +199,10 @@ nav img {
   .imagenH{
     width: 80%;
   }
+
+  .salir {
+    overflow: visible;
+  }
   
   .poligono{
   display: flex;
@@ -216,9 +221,11 @@ nav img {
       align-items: center;
       background-color: #BCE4EC;
       padding-bottom: 1rem;
-      clip-path:  polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+      clip-path: none;
       height:100% ;
+      text-overflow: ellipsis;
   }
+
   #salir{
     overflow: visible !important;
   }
