@@ -1,3 +1,4 @@
+
 //nav:
 
 function myFunction() {
@@ -20,85 +21,76 @@ function myFunction() {
 
 //Finaliza nav
 
+const empresa = document.querySelector("#empresa")
+const botonNo = document.querySelector("#checkbox2")
+const botonSi = document.querySelector("#checkbox1")
+
+function Mostrar(){
+    $("#empresa").show()
+    if ($("#checkbox2").value != false) {$("#checkbox2").value = false}
+}
+
+function Ocultar(){
+    $("#empresa").hide();
+    if ($("#checkbox1").value !=false) { $("#checkbox1").value = false
+        
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
 
+// Definir las reglas de validación
+const reglas = {
+  nombre: {
+    presence: true,
+    length: {
+      minimum: 3,
+      maximum: 20,
+      tooShort: "debe tener al menos %{count} caracteres",
+      tooLong: "debe tener menos de %{count} caracteres"
+    }
+  },
+  email: {
+    presence: true,
+    email: true
+  }
+};
 
-    const constraints = {
-        nombre_completo: {
-            presence: {
-                message: 'es requerido'
-              },
-              
-              length: {
-                minimum: 3,
-                message: 'El nombre completo debe tener al menos 3 caracteres'
-              }
-        },
-        checkbox1: {
-          inclusion: {
-            within: [true, false],
-            message: "es requerido"
-          }
-        },
-        checkbox2: {
-          inclusion: {
-            within: [true, false],
-            message: "seleccione una opción"
-          }
-        },
-        nombre_empresa: {
-          presence: true
-        },
-        email: {
-            presence: true,
-            email: {
-                message: 'Ingrese una dirección de correo electrónico válida'
-            }
-        },
-        telefono: {
-          presence: true,
-          format: {
-            pattern: "[0-9]+",
-            message: "solo se permiten números"
-          }
-        },
-        razon_consulta: {
-          presence: true
-        }
-      };
+// Obtener el formulario
+const formulario = document.getElementById('mi-formulario');
+
+// Agregar un listener al evento submit del formulario
+$("#enviar").on("click",function(event){
+    event.preventDefault();
+  
+  // Obtener los valores del formulario
+  const datos = {
+    nombre: formulario.elements.nombre.value,
+    email: formulario.elements.email.value
+  };
+  
+  // Validar los datos usando Validate.js
+  const errores = validate(datos, reglas);
+  
+  // Si hay errores, mostrarlos
+  if (errores) {
+    // Borrar los errores previos
+    const erroresAnteriores = document.querySelectorAll('.error');
+    erroresAnteriores.forEach(error => error.remove());
     
-      const form = document.getElementById('mi-formulario');
-    
-      form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        const values = {
-            nombre_completo: form.querySelector('#nombre_completo').value,
-            nombre_completo: form.querySelector('#email').value,
-            // Agregar el resto de los campos del formulario
-          };
-        const errors = validate(values, constraints);
-        if (errors) {
-          handleErrors(errors);
-        } else {
-          handleSuccess();
-        }
-      });
-    
-      function handleErrors(errors) {
-        const errorList = document.getElementById('error-list');
-        errorList.innerHTML = '';
-        for (const key in errors) {
-          if (errors.hasOwnProperty(key)) {
-            const error = errors[key];
-            const li = document.createElement('li');
-            li.textContent = `${key} ${error}`;
-            errorList.appendChild(li);
-          }
-        }
-      }
-    
-      function handleSuccess() {
-        alert('El formulario ha sido enviado con éxito.');
-      }
+    // Mostrar los nuevos errores
+    Object.keys(errores).forEach(nombreCampo => {
+      const input = formulario.elements[nombreCampo];
+      const error = document.createElement('div');
+      error.className = 'error';
+      error.innerHTML = errores[nombreCampo][0];
+      input.parentNode.insertBefore(error, input.nextSibling);
+    });
+  } else {
+    // Si no hay errores, enviar el formulario
+    formulario.submit();
+  }
+});
+
   });
 
