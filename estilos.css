@@ -3,109 +3,98 @@
     --footer: #474E52;
 }
 
-/* los siguientes estilos corresponden al nav*/
 #nav {
-    height: 12rem;
-    position: fixed;
-    left: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 70px;
-    background: #6496A4;
-    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.14);
-  }
-  
-  .links {
-    display: flex;
-    gap: 16px;
-  }
-  
-  .links a {
-    color: #f8f8f8;
-    text-decoration: none;
-  }
-  
-  nav .links a:hover {
-      background-color: #f9f9f9;
-      color: #6496A4;
-      padding: .4rem;
-      border-radius: 7px;
-      transition: .3s;
-  }
-  
-  nav img {
-    width: 5rem;
-    transform-origin: 0% 50%;
-    transition: 0.3s;
-  }
-  
-  .container {
-    margin: 0 10%;
-    width: 80%;
-  }
-  
-  .flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .hamburger {
-      display: none;
-      cursor: pointer;
-  }
-  
-  .menu-desktop {
-      transition: .6s;
-      z-index: 100;
-  }
-  
-  
-  
-  @media (max-width: 767px) {
-      .hamburger {
-        display: block;
-      }
-  
-      nav .links {
-          display: none;
-          flex-direction: column;
-          gap: 4rem;
-      }
-  
-      .menu-mobile {
-          transition: .6s;
-          z-index: 100;
-          position: fixed;
-          height: 100% !important;
-      }
-  
-      #hambur-active {
-          position: relative;
-          top: 1rem;
-          right: 1rem;
-      }
-  
-      
-  }
-  
-  @media(min-width: 768px) {
+  height: 12rem;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background: #6496A4;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.14);
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+}
+
+.links a {
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+nav .links a:hover {
+    background-color: #f9f9f9;
+    color: #6496A4;
+    padding: .4rem;
+    border-radius: 7px;
+    transition: .3s;
+}
+
+nav img {
+  width: 5rem;
+  transform-origin: 0% 50%;
+  transition: 0.3s;
+}
+
+.container {
+  margin: 0 10%;
+  width: 80%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-desktop {
+    transition: .6s;
+    z-index: 100;
+}
+
+
+
+@media (max-width: 767px) {
+    .hamburger {
+      display: block;
+    }
+
     nav .links {
-      display: flex !important;
+        display: none;
+        flex-direction: column;
+        gap: 4rem;
     }
-  
-    .hambur-active {
-      display: none;
+
+    .menu-mobile {
+        transition: .6s;
+        z-index: 100;
+        position: fixed;
+        height: 100% !important;
     }
-  }
+
+    #hambur-active {
+        position: relative;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    
+}
+
+/* Aquí finalizan los estilos del navbar*/
+
+
   
-  /* Aquí finalizan los estilos del navbar*/
-
-
-
 h1 {
     display: flex;
     justify-content: center;
@@ -217,6 +206,7 @@ h1 {
     margin: auto;
     width: 70%;
     margin-bottom: 20px;
+    font-size: 1.2rem;
 }
 
 #mantenimiento-titulo{
@@ -247,6 +237,7 @@ h1 {
     margin: auto;
     width: 70%;
     margin-bottom: 20px;
+    font-size: 1.2rem;
 }
 
 #seguridad-titulo{
@@ -287,6 +278,7 @@ h1 {
     text-align: center;
 }
 
+
 @media (max-width: 992px) {
 
     :root {
@@ -314,7 +306,6 @@ h1 {
         color: #2263A8;
         font-size: 50px;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
     }
     
     #titulo-2 {
@@ -384,7 +375,7 @@ h1 {
     
     .mantenimiento{
         margin-top: 50px;
-        width: 100%;
+        width: 97%;
         background: #92CFE1;
         margin: 15px;
         border-radius: 30px;
@@ -392,7 +383,7 @@ h1 {
     }
     .seguridad{
         margin-top: 50px;
-        width: 100%;
+        width: 97%;
         background: #92CFE1;
         margin: 15px;
         border-radius: 30px;
@@ -481,6 +472,21 @@ h1 {
 
 
 
+}
+
+@media (min-width: 995px),(max-width:1400px) {
+
+
+    
+    #foto-soporte-ti {
+        width:300px;
+        overflow: hidden;
+        object-fit: contain;
+        justify-content: center;
+        display: flex;
+    }
+
+    
 }
 
 @media (max-width: 576px) {
