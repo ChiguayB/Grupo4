@@ -203,8 +203,9 @@ nav img {
   }
 
   .imagenH{
-    width: 500px;
+    width: 80%;
     padding-top: 5%;
+    padding-bottom: 2%;
   }
   
   .poligono{
