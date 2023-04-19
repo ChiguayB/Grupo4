@@ -204,10 +204,7 @@ nav img {
 
   .imagenH{
     width: 80%;
-  }
-
-  .salir {
-    overflow: visible;
+    padding: 5%;
   }
   
   .poligono{
@@ -232,9 +229,6 @@ nav img {
       text-overflow: ellipsis;
   }
 
-  #salir{
-    overflow: visible !important;
-  }
 }
 
 
