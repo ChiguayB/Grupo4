@@ -27,10 +27,13 @@ function myFunction() {
       for (let i = 0; i < data.results.length; i++) {
         nombre = data.results[i].name.first;
         apellido = data.results[i].name.last;
-        newCliente = $( "#clientes-api" ).append(`<p> ${nombre} ${apellido} ${Math.random()}</p>`);
+        imagen = data.results[i].picture.medium;
+        numero = Math.floor(Math.random()*6);
+        estrella = "img/icons8-estrella-48.png"; 
+        newCliente = $( "#clientes-api" ).append(`<img src="${imagen}"><p> ${nombre} ${apellido} ha puntuado: ${numero} estrellas <img src="img/icons8-estrella-48.png"></p>`);
 
         
-    console.log(nombre + (" ") + apellido);
+    console.log(numero);
         
       }
       

@@ -100,7 +100,20 @@ nav img {
 
 /* Aquí finalizan los estilos del navbar*/
 
+#titulo {
+  margin: 7rem 2rem;
+}
+
+#titulo img {
+  width: 100%;
+}
+
+legend {
+  text-decoration: underline #3a4f6a;
+}
+
 #form-cont {
+  box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);;
   margin-top: 10rem;
   margin-bottom: 10rem;
   padding: 1rem;
@@ -108,8 +121,13 @@ nav img {
   background-color: #ADD7E2;
 }
 
+#viene {
+  padding-right: 1rem;
+}
+
 #razon-cont {
   margin-top: 2rem;
+  height: 4rem;
 }
 
 #text-consult {
@@ -124,12 +142,16 @@ nav img {
 
 #enviar {
   border-radius: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
 #empresa {
   display: none;
+}
+
+#cont-ge {
+  padding: 1rem;
 }
 
   /*El siguiente código corresponde al footer*/

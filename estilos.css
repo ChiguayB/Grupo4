@@ -1,6 +1,7 @@
 :root {
     --header: #6496A4;
     --footer: #474E52;
+    font-family: lato;
 }
 
 #nav {
@@ -581,11 +582,28 @@ h1 {
 
 }
 
-#clientes-api {
-    background-color: #2263A8;
-    color: #f9f9f9;
-    padding: 1rem;
+#api-cont {
+    font-family: cabin;
+    font-size: 5px;
+    color: #f9f9f9ce;
+    font-size: 30px;
+    border-radius: 1rem;
+    background-color: #1b5899d8;
+    padding: 0 1rem 2rem;
+    margin-bottom: 3rem;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+
 }
+
+#clientes-api {
+    font-size: 22px;
+    border-radius: 1rem;
+    background-color: #b5dbe6de;
+    color: #183357cb;
+    padding: 2rem 1rem;
+    border: #183357 solid;
+}
+
 
 /*El siguiente código corresponde al footer*/
 
