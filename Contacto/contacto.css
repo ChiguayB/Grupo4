@@ -61,6 +61,11 @@ nav img {
 
 
 @media (max-width: 767px) {
+
+  #titulo img {
+    width: 80%;
+  }
+
     .hamburger {
       display: block;
     }
